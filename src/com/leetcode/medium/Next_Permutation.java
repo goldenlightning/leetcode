@@ -45,15 +45,15 @@ public class Next_Permutation {
 		if(nums == null || nums.length < 2)
 			return nums;
 		
-		int position = -1;
+		int pos = -1;
 		for(int i = nums.length - 1; i > 0; i--) {
 			if(nums[i] > nums[i - 1]) {
-				position = i - 1;
-				nums[position] = min(position, nums, nums[position]);
+				pos = i - 1;
+				nums[pos] = min(pos, nums, nums[pos]);
 				break;
 			}
 		}
-		sortAsc(position, nums);
+		sortAsc(pos, nums);
 		
 		return nums;
 	}
@@ -66,14 +66,14 @@ public class Next_Permutation {
 
 	private static int min(int start, int[] nums, int value) {
 		int min = Integer.MAX_VALUE;
-		int position = 0;
+		int pos = 0;
 		for(int i = start + 1; i <= nums.length - 1; i++) {
 			if(nums[i] < min) {
 				min = nums[i];
-				position = i;
+				pos = i;
 			}
 		}
-		nums[position] = value;
+		nums[pos] = value;
 		return min;
 	}
 
