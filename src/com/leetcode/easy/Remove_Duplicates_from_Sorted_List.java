@@ -45,7 +45,6 @@ public class Remove_Duplicates_from_Sorted_List {
 				slower = slower.next;
 				faster = faster.next;
 			}
-			
 		}
 		
 		return head;
