@@ -15,14 +15,14 @@ public class Balanced_Binary_Tree {
 	public static void main(String[] args) {
 		
 		
-		TreeNode f = new TreeNode("f");
-		TreeNode d = new TreeNode(f, null, "d");
-		TreeNode e = new TreeNode("e");
+		TreeNode f = new TreeNode(6);
+		TreeNode d = new TreeNode(f, null, 4);
+		TreeNode e = new TreeNode(5);
 		
-		TreeNode b = new TreeNode(d, e, "b");
-		TreeNode c = new TreeNode(null, null, "c");
+		TreeNode b = new TreeNode(d, e, 2);
+		TreeNode c = new TreeNode(null, null, 3);
 		
-		TreeNode a = new TreeNode(b, c, "a");
+		TreeNode a = new TreeNode(b, c, 1);
 		
 		System.out.println(isBalanced2(a));
 		
