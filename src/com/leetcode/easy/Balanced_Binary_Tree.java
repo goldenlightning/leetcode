@@ -26,14 +26,6 @@ public class Balanced_Binary_Tree {
 		
 		System.out.println(isBalanced2(a));
 		
-//		TreeNode d = new TreeNode("d");
-//		TreeNode c = new TreeNode(d, null, "c");
-//		TreeNode b = new TreeNode(c, null, "b");
-//		
-//		TreeNode a = new TreeNode(null, b, "a");
-//		
-//		System.out.println(isBalanced2(a));
-		
 	}
 	
 	public static boolean isBalanced2 (TreeNode node) {
